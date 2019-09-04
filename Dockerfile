@@ -17,7 +17,7 @@ RUN echo "deb https://packagecloud.io/tyk/tyk-pump/debian/ jessie main" | tee /e
  && apt-get install -y tyk-pump=$TYKVERSION \
  && rm -rf /var/lib/apt/lists/*
 
-COPY ./pump.mongo.conf /opt/tyk-pump/pump.conf
+COPY ./pump.redis.conf /opt/tyk-pump/pump.conf
 VOLUME ["/opt/tyk-pump/"]
 
 WORKDIR /opt/tyk-pump
