@@ -26,5 +26,3 @@ Quickstart
 
 	`docker run -d --name tyk_pump --link tyk_redis:redis --link tyk_mongo:mongo tykio/tyk-pump-docker-pub`
 
-
-
